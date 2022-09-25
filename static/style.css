@@ -20,11 +20,12 @@ body {
 }
 
 .main_box {
+  margin: 30px 0 0 0;
   flex-grow: 1;
 }
 
 .stage_box {
-  display: relative;
+  position: relative;
   margin: auto;
   max-width: 700px;
   min-height: 700px;
@@ -34,13 +35,83 @@ body {
   background-color: #ffffff;
 }
 
+.container {
+  position: absolute;
+  display: flex;
+  margin: auto;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  justify-content: center;
+}
+
+
+.switch_button {
+  position: relative;
+  width: 240px;
+  height: 60px;
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: #974949;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.btn_left, .btn_right {
+  display: flex;
+  flex-grow: 1;
+  height: 60px;
+}
+
+.btn_left {
+  border-right: 1px rgba(0, 0, 0, 0.4) solid;
+  border-radius: 40px 0 0 40px;
+}
+
+.btn_right {
+  border-left: 1px rgba(0, 0, 0, 0.4) solid;
+  border-radius: 0 40px 40px 0;
+}
+
+.btn_left_txt {
+  position: relative;
+  margin: auto;
+  font-family: "icomoon";
+}
+
+.btn_right_txt {
+  position: relative;
+  margin: auto;
+  font-family: "icomoon";
+}
+
+
 .hide {
   display: none;
 }
 
-.title {
-  font-size: 30px;
+.stage_title {
+  font-family: "Kanit", serif;
+  font-size: 32px;
   font-weight: bold;
+}
+
+.about {
+  position: relative;
+  width: 100%;
+}
+
+.img_ellipse {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+
+  background: url(img/wnNMmI1WGdk.jpg) 50%/cover no-repeat;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -113,7 +184,7 @@ body {
   color: #0088cc;
 }
 
-.button {
+.discord {
   background: rgba(0, 0, 0, 0);
   color: #ffffff;
   border: none;
@@ -121,7 +192,7 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.button:hover {
+.discord:hover {
   opacity: 1;
   color: #5865F2;
   text-decoration: none;
