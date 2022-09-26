@@ -1,5 +1,5 @@
 # Yandex_qualification
-Yandex intensive "Frontend" qualification 2022 (Сайт - описание моего проффесионального пути)
+Yandex intensive "Frontend" qualification 2022 (Сайт - описание моего проффесионального пути)  
 **[Сайт](https://ru1ka.github.io/Yandex_qualification/)**
 
 ## Описание реализации
