@@ -11,12 +11,46 @@
   font-display: block;
 }
 
+/* animations */
+@keyframes ani_appearance {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.appearance {
+  opacity: 0;
+  animation: ani_appearance 1.5s forwards;
+}
+
+/* style */
 body {
   background-color: #275054;
 
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.text {
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  margin: 10px 0;
+  width: 500px;
+}
+
+.big_text_container {
+  position: relative;
+  display: flex;
+  margin: auto;
+  padding: 200px 0 0 0;
+  width: 80%;
+  text-align: center;
+}
+
+.big_text {
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
 }
 
 .main_box {
@@ -35,7 +69,7 @@ body {
   background-color: #ffffff;
 }
 
-.container {
+.switch_button_container {
   position: absolute;
   display: flex;
   margin: auto;
@@ -90,9 +124,15 @@ body {
   display: none;
 }
 
-.stage_title {
+.title {
   font-family: "Kanit", serif;
   font-size: 32px;
+  font-weight: bold;
+}
+
+.title_caption {
+  font-family: "Kanit", serif;
+  font-size: 20px;
   font-weight: bold;
 }
 

@@ -19,21 +19,39 @@
 <body>
   <input id="hide_txt" class="hidden_input" value="Rulka#5510">
   <div class="main_box">
-    <div class="stage_box">
-      <div class="about">
-        <div class="stage_title">About</div>
+    <div class="stage_box appearance">
+      <!-- Stages -->
+      <div class="about appearance" id="0">
+        <div class="stage_title"><span class="title">About</span></div>
         <img class="img_ellipse" src="./static/img/wnNMmI1WGdk.jpg" alt="фоточка меня любимого">
-        <div class="text"></div>
+        <div class="text">Name: Kirill Surkov</div>
+        <div class="text">Age: 16</div>
+        <div class="text"><p>stack: python (Aiogram, PyQt5, Flask, sqlite3, pygame, sqlalchemy) and HTML/CSS/JS little bit<p></div>
       </div>
-      <div class="stage1 hide"></div>
-      <div class="stage2 hide"></div>
-      <div class="stage3 hide"></div>
-      <div class="container">
+      <div class="stage1 hide" id="1">
+        <div><span class="title">stage1</span><span class="title_caption"> (2018-2020)</span></div>
+        <div class="text"><p>Я начинаю интересоваться около IT тематикой, инженерией, электроникой, устройством ПК и т.п. Начинаю ходить в ШЦТ, немного разбираюсь с Arduino => получаю первый опыт, пусть и детского, но программирования</p></div>
+      </div>
+      <div class="stage2 hide" id="2">
+        <div><span class="title">stage2</span><span class="title_caption"> (2020-2022)</span></div>
+        <div class="text"><p>Поступаю в Яндекс Лицей, заканчиваю оба года с отличием, разрабатываю свои первые проекты</p></div>
+        <div class="text">1) <a href="https://github.com/Ru1ka/Derka_assistant">Derka Assistant</a> (PyQt5)</div>
+        <div class="text">2) <a href="https://github.com/Jubastik/MyLittleBomb">My little Bomb</a> (pygame)</div>
+        <div class="text">3) <a href="https://t.me/hw_assistant_bot">HW Assistant</a>* (Flask, Aiogram)</div>
+        <div class="text">4) <a href="https://github.com/Ru1ka/Rulka_taplink">Taplink</a> (HTML/CSS)</div>
+        <div class="text">*Закрытый репозиторий, могу показать в Discord</div>
+      </div>
+      <div class="stage3 hide" id="3">
+        <div><span class="title">stage3</span><span class="title_caption"> (2022-XXXX)</span></div>
+        <div class="big_text_container"><div class="big_text">Интенсив Академии Яндекса Frontend ^_^</div></div>
+      </div>
+      <!-- General -->
+      <div class="switch_button_container">
         <div class="switch_button">
-          <div class="btn_left">
-            <div class="btn_left_txt" onclick=""></div>
+          <div class="btn_left" onclick="left_click()">
+            <div class="btn_left_txt"></div>
           </div>
-          <div class="btn_right" onclick="">
+          <div class="btn_right" onclick="right_click()">
             <div class="btn_right_txt"></div>
           </div>
         </div>
@@ -43,7 +61,7 @@
 </body>
 
 <footer>
-  <div class="footer">
+  <div class="footer appearance">
     <div class="icons_txt">Social media</div>
     <div class="icons_box">
       <span class="icon github">
